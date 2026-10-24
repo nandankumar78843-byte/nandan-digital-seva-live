@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071d46">
+<title>न्यूज़ चैनल | Nandan Digital Seva</title>
+<style>
+:root{--navy:#071d46;--blue:#0b56bd;--bg:#f2f6ff;--ink:#142747;--muted:#65758d;--line:#dbe6f7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans Devanagari",system-ui,sans-serif}
+header{background:linear-gradient(120deg,#071d46,#0b56bd);color:#fff;padding:24px clamp(16px,4vw,48px)}
+header a{color:#fff;text-decoration:none;font-weight:700}header h1{margin:22px 0 6px;font-size:clamp(26px,4vw,40px)}header p{color:#dceaff;margin:0;line-height:1.6}
+main{max-width:1200px;margin:auto;padding:24px clamp(14px,3vw,28px) 50px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.btn,.channel{border:1px solid var(--line);background:#fff;color:var(--blue);border-radius:11px;padding:10px 14px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}
+.channel-grid,.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+.channel{display:block;text-align:left;color:var(--ink);padding:18px;animation:rise .45s both;box-shadow:0 8px 24px #0b2d5b0a;transition:transform .2s,box-shadow .2s}.channel:hover,.story:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0b2d5b16}.channel strong{display:block;font-size:19px;margin-bottom:7px}.channel small{color:var(--muted)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0 14px}.bar h2{margin:0;font-size:22px}.bar span{color:var(--muted);font-size:14px}
+.story{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 8px 24px #0b2d5b08;animation:rise .35s both;transition:transform .2s,box-shadow .2s}.story img{display:block;width:100%;max-height:240px;object-fit:cover;background:#e8effa}.story-body{padding:16px}.pill{font-size:12px;color:#0756b8;background:#eaf3ff;padding:5px 8px;border-radius:20px}.story h3{font-size:18px;line-height:1.45;margin:12px 0 8px}.story p{color:var(--muted);font-size:14px;line-height:1.6}.story a{color:#0756b8;font-weight:750;text-decoration:none}.story video{width:100%;max-height:320px;background:#000}.empty,.notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;line-height:1.7;color:var(--muted);grid-column:1/-1}.notice{margin-top:20px;font-size:13px;background:#fffaf0;border-color:#f3dfb0;color:#73551b}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<header><a href="index.html">← मुख्य वेबसाइट पर वापस जाएँ</a><h1 id="pageTitle">न्यूज़ चैनल</h1><p id="subtitle">चैनल चुनें और उपलब्ध ताज़ा खबरें देखें।</p></header>
+<main><div class="actions"><a class="btn" href="channel-news.html">सभी चैनल</a><a class="btn" id="publisherLink" href="https://www.bbc.com/hindi" target="_blank" rel="noopener noreferrer" hidden>मूल चैनल की वेबसाइट ↗</a><button class="btn" id="refresh">खबरें रीफ्रेश करें ↻</button></div>
+<div id="channelGrid" class="channel-grid"></div><div class="bar"><h2 id="sectionTitle">ताज़ा खबरें</h2><span id="status">लोड हो रहा है…</span></div><div id="newsGrid" class="news-grid"><div class="empty">खबरें लोड हो रही हैं…</div></div>
+<div class="notice">यह पेज चैनलों के उपलब्ध RSS फ़ीड से शीर्षक और संक्षिप्त विवरण दिखाता है। हर खबर का पूरा लेख मूल प्रकाशक पर पढ़ें। वीडियो तभी इस पेज पर चलेगा जब फ़ीड में सीधे वीडियो फ़ाइल उपलब्ध हो; अन्यथा मूल खबर/चैनल का लिंक खोलें। प्रकाशक की शर्तों और कॉपीराइट का सम्मान करें।</div></main>
+<script>
+const feeds=[
+{id:'bbc-hindi-news',name:'BBC News Hindi',url:'https://www.bbc.com/hindi',description:'BBC Hindi से उपलब्ध RSS खबरें'},
+{id:'aajtak-news',name:'Aaj Tak',url:'https://www.aajtak.in/',description:'Aaj Tak से उपलब्ध RSS खबरें'},
+{id:'ndtv-india-news',name:'NDTV India',url:'https://ndtv.in/',description:'NDTV India से उपलब्ध RSS खबरें'}
+];
+const params=new URLSearchParams(location.search);const channel=params.get('channel')||'all';
+const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function safe(v){try{const u=new URL(v);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
+function renderChannels(){const grid=document.getElementById('channelGrid');if(channel!=='all'){grid.innerHTML='';return}grid.innerHTML=feeds.map((f,i)=>`<a class="channel" style="animation-delay:${i*60}ms" href="channel-news.html?channel=${encodeURIComponent(f.id)}"><strong>${esc(f.name)} ↗</strong><small>${esc(f.description)}</small></a>`).join('')}
+async function load(){const status=document.getElementById('status'),grid=document.getElementById('newsGrid');status.textContent='खबरें लोड हो रही हैं…';grid.innerHTML='<div class="empty">ताज़ा खबरें प्राप्त की जा रही हैं…</div>';try{
+const r=await fetch('/api/posts',{cache:'no-store'});if(!r.ok)throw Error('API unavailable');const posts=await r.json();let list=posts;
+if(channel==='gov')list=posts.filter(p=>/bpsc|csbc|ssc|upsc|nta|bihar|scholarship|pm.?kisan|government|scheme|yojana|सरकारी|योजना|नौकरी|परीक्षा/i.test([p.sourceId,p.sourceName,p.category,p.title,p.summary].join(' ')));
+else if(channel!=='all')list=posts.filter(p=>p.sourceId===channel);
+const feed=feeds.find(f=>f.id===channel);const publisherLink=document.getElementById('publisherLink');if(feed){publisherLink.href=feed.url;publisherLink.hidden=false;publisherLink.textContent=feed.name+' की वेबसाइट ↗'}else publisherLink.hidden=true;document.getElementById('pageTitle').textContent=feed?feed.name:channel==='gov'?'सरकारी अपडेट':'न्यूज़ चैनल';document.getElementById('subtitle').textContent=feed?`${feed.name} की उपलब्ध खबरें`:'चैनल चुनें और उपलब्ध ताज़ा खबरें देखें।';document.getElementById('sectionTitle').textContent=feed?`${feed.name} की ताज़ा खबरें`:channel==='gov'?'सरकारी अपडेट':'ताज़ा खबरें';
+status.textContent=`${list.length} खबर/अपडेट`;if(!list.length){grid.innerHTML='<div class="empty">इस चैनल की कोई खबर अभी RSS फ़ीड से आयात नहीं हुई है। सर्वर चालू रखें; फ़ीड उपलब्ध होने पर नई खबरें यहाँ आएँगी। चैनल की वेबसाइट पर जाने के लिए ऊपर उसका कार्ड/लिंक खोलें।</div>';return}
+grid.innerHTML=list.slice(0,100).map((p,i)=>{const image=p.imageUrl?`<img loading="lazy" src="${safe(p.imageUrl)}" alt="">`:'';const video=p.mediaUrl&&/^video\\//i.test(p.mediaType||'')?`<video controls preload="metadata" src="${safe(p.mediaUrl)}"></video>`:'';return `<article class="story" style="animation-delay:${Math.min(i,12)*35}ms">${video||image}<div class="story-body"><span class="pill">${esc(p.sourceName||'News')}</span><h3>${esc(p.title)}</h3>${p.summary?`<p>${esc(p.summary)}</p>`:''}<p>${esc((p.publishedAt||'').slice(0,10))}</p><a href="${safe(p.url)}" target="_blank" rel="noopener noreferrer">पूरी खबर मूल वेबसाइट पर पढ़ें ↗</a></div></article>`}).join('');
+}catch(e){status.textContent='सर्वर से कनेक्शन नहीं हुआ';grid.innerHTML='<div class="empty">VS Code टर्मिनल में npm start चलाएँ, फिर रीफ्रेश करें।</div>'}}
+renderChannels();document.getElementById('refresh').addEventListener('click',load);load();
+</script></body></html>

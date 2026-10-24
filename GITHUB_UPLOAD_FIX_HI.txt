@@ -1,0 +1,27 @@
+NANDAN DIGITAL SEVA — GitHub Upload Note (Hindi)
+
+IMPORTANT: ZIP ko extract karne ke baad files/folders ki original structure bilkul same rakhein.
+
+GitHub repository ke root mein ye files/folders hone chahiye:
+- server.js
+- package.json
+- package-lock.json
+- index.html
+- automation/   (folder)
+- assets/       (folder)
+- public/       (folder)
+
+automation folder ke andar:
+- bpsc-monitor.js
+- bpsc-seen.json
+- posts.json
+- sources.json
+- sources.backup.json
+
+Aapki current Vercel error isliye aa rahi hai kyunki GitHub par automation folder ke andar ki files root mein upload ho gayi hain.
+Un files ko root mein alag-alag rakhne ke bajay automation/ folder ke andar upload karna zaroori hai.
+
+GitHub par sab files ek hi level par flatten mat karein.
+Agar browser upload mein folder structure preserve nahi hoti, to GitHub Desktop use karke extracted project folder ko repository mein copy/commit/push karein.
+
+Is package mein application code ko badalne ka koi naya change nahi kiya gaya; existing fixed ZIP ki directory structure preserve ki gayi hai.

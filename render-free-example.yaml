@@ -1,0 +1,19 @@
+# OPTIONAL example for Render Free.
+# This is NOT the default render.yaml because Render Blueprint auto-detects render.yaml.
+# Free services may sleep and do not provide a persistent disk; RSS/BPSC checks and JSON data
+# are therefore not guaranteed to remain available/persistent.
+services:
+  - type: web
+    name: nandan-digital-seva-free
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CHECK_CRON
+        value: "*/5 * * * *"
+      - key: ADMIN_TOKEN
+        generateValue: true

@@ -1,0 +1,11 @@
+NANDAN DIGITAL SEVA KENDRA — FLAT UPDATED ZIP
+
+Is ZIP me purani files rakhi gayi hain. Folder ke andar wali files ko root me alag-alag files bana kar rakha gaya hai, aur server-updated.js add ki gayi hai.
+
+IMPORTANT:
+- Purana server.js aur package.json delete/replace nahi kiya gaya.
+- Naya server chalane ke liye project folder me terminal kholkar: node server-updated.js
+- Isse pehle dependencies install honi chahiye: npm install
+- Render par deploy karte waqt Start Command ko `node server-updated.js` set karna hoga.
+- Render Free service sleep ho sakti hai; ye 24/7 uptime ki guarantee nahi hai.
+- Static asset path update kiya gaya hai: computer-hero.svg root me hai.

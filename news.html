@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News | Nandan Digital Seva</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #172033;
+    }
+    header {
+      background: #071d46;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 25px; }
+    header p { margin: 0; color: #dce8ff; }
+    nav {
+      background: white;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+    }
+    button, .home {
+      border: 0;
+      border-radius: 8px;
+      padding: 11px 15px;
+      background: #0756b8;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    button:hover, .home:hover { background: #063d85; }
+    main { max-width: 950px; margin: 24px auto; padding: 0 15px; }
+    .panel {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 10px #14264b12;
+    }
+    h2 { margin-top: 0; color: #071d46; }
+    .channels { display: flex; gap: 10px; flex-wrap: wrap; }
+    .channels button { background: #e7efff; color: #073d83; }
+    .channels button.active { background: #0756b8; color: white; }
+    .status { color: #596579; font-size: 14px; line-height: 1.6; }
+    .news-item {
+      border: 1px solid #e1e7f0;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 12px;
+    }
+    .news-item h3 { margin: 0 0 8px; font-size: 18px; }
+    .news-item p { line-height: 1.6; }
+    .news-item a { color: #0756b8; font-weight: bold; }
+    footer { text-align: center; padding: 22px; color: #596579; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📰 News & Government Updates</h1>
+    <p>Nandan Digital Seva Kendra</p>
+  </header>
+
+  <nav>
+    <a class="home" href="/">Home</a>
+    <button onclick="showSection('news')">News</button>
+    <button onclick="showSection('government')">सरकारी योजनाएँ</button>
+  </nav>
+
+  <main>
+    <section class="panel" id="news">
+      <h2>लेटेस्ट न्यूज़</h2>
+      <div class="channels">
+        <button class="active" onclick="selectChannel('BBC Hindi',this)">BBC Hindi</button>
+        <button onclick="selectChannel('Aaj Tak',this)">Aaj Tak</button>
+        <button onclick="selectChannel('NDTV India',this)">NDTV India</button>
+      </div>
+      <p class="status" id="channelStatus">
+        चैनल चुनें। खबर पढ़ने के लिए मूल स्रोत खोलें।
+      </p>
+      <div id="newsList"></div>
+    </section>
+
+    <section class="panel" id="government" hidden>
+      <h2>सरकारी योजनाएँ और आधिकारिक अपडेट</h2>
+      <p class="status">
+        आवेदन, पात्रता और अंतिम तारीख की पुष्टि संबंधित सरकारी वेबसाइट पर करें।
+      </p>
+      <div id="governmentList"></div>
+    </section>
+  </main>
+
+  <footer>Nandan Digital Seva Kendra</footer>
+
+  <script>
+    const channels = {
+      "BBC Hindi": {
+        url: "https://www.bbc.com/hindi",
+        description: "BBC Hindi की खबरें और रिपोर्ट"
+      },
+      "Aaj Tak": {
+        url: "https://www.aajtak.in/",
+        description: "Aaj Tak की ताज़ा खबरें"
+      },
+      "NDTV India": {
+        url: "https://ndtv.in/",
+        description: "NDTV India की खबरें"
+      }
+    };
+
+    function selectChannel(name, button) {
+      document.querySelectorAll(".channels button").forEach(b =>
+        b.classList.remove("active")
+      );
+      button.classList.add("active");
+
+      const channel = channels[name];
+      document.getElementById("channelStatus").textContent =
+        channel.description + " — नीचे दिए लिंक से मूल वेबसाइट खोलें।";
+
+      document.getElementById("newsList").innerHTML = `
+        <article class="news-item">
+          <h3>${name}</h3>
+          <p>इस चैनल की नवीनतम खबरें देखने के लिए इसकी आधिकारिक वेबसाइट खोलें।</p>
+          <a href="${channel.url}" target="_blank" rel="noopener noreferrer">
+            ${name} पर खबरें पढ़ें ↗
+          </a>
+        </article>`;
+    }
+
+    function showSection(section) {
+      document.getElementById("news").hidden = section !== "news";
+      document.getElementById("government").hidden =
+        section !== "government";
+    }
+
+    const governmentSources = [
+      ["National Portal of India", "https://www.india.gov.in/"],
+      ["PM-KISAN", "https://pmkisan.gov.in/"],
+      ["National Scholarship Portal", "https://scholarships.gov.in/"],
+      ["Bihar Government", "https://state.bihar.gov.in/"],
+      ["Bihar Public Service Commission", "https://bpsc.bihar.gov.in/"],
+      ["Bihar Bhumi", "https://biharbhumi.bihar.gov.in/"]
+    ];
+
+    document.getElementById("governmentList").innerHTML =
+      governmentSources.map(([name, url]) => `
+        <article class="news-item">
+          <h3>${name}</h3>
+          <a href="${url}" target="_blank" rel="noopener noreferrer">
+            आधिकारिक वेबसाइट खोलें ↗
+          </a>
+        </article>
+      `).join("");
+
+    selectChannel("BBC Hindi", document.querySelector(".channels button"));
+  </script>
+</body>
+</html>

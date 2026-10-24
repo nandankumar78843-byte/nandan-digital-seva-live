@@ -1,0 +1,488 @@
+[
+  {
+    "id": "bpsc",
+    "name": "BPSC",
+    "url": "https://bpsc.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "केवल सत्यापित आधिकारिक RSS/API URL यहाँ भरें।"
+  },
+  {
+    "id": "csbc",
+    "name": "CSBC Bihar",
+    "url": "https://csbc.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "RSS/API उपलब्धता जाँचकर URL भरें।"
+  },
+  {
+    "id": "ssc",
+    "name": "SSC",
+    "url": "https://ssc.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "RSS/API उपलब्धता जाँचकर URL भरें।"
+  },
+  {
+    "id": "upsc",
+    "name": "UPSC",
+    "url": "https://www.upsc.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "RSS/API उपलब्धता जाँचकर URL भरें।"
+  },
+  {
+    "id": "nta",
+    "name": "NTA",
+    "url": "https://www.nta.ac.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "एडमिट कार्ड",
+    "note": "RSS/API उपलब्धता जाँचकर URL भरें।"
+  },
+  {
+    "id": "biharbhumi",
+    "name": "बिहारभूमि",
+    "url": "https://biharbhumi.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "आवास और जमीन",
+    "note": "यदि RSS/API नहीं है तो अनुमत विकल्प अलग से जाँचें।"
+  },
+  {
+    "id": "scholarships",
+    "name": "National Scholarship Portal",
+    "url": "https://scholarships.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "छात्रवृत्ति",
+    "note": "RSS/API उपलब्धता जाँचकर URL भरें।"
+  },
+  {
+    "id": "pmkisan",
+    "name": "PM-KISAN",
+    "url": "https://pmkisan.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "किसान",
+    "note": "RSS/API उपलब्धता जाँचकर URL भरें।"
+  },
+  {
+    "id": "onlineupdatestm",
+    "name": "Online Update STM",
+    "url": "https://onlineupdatestm.co.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "अन्य अपडेट",
+    "note": "तीसरे पक्ष की सामग्री के लिए RSS/अनुमति और स्रोत-लिंक का उपयोग करें।"
+  },
+  {
+    "id": "bssc",
+    "name": "BSSC",
+    "url": "https://bssc.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "btsc-bihar",
+    "name": "BTSC Bihar",
+    "url": "https://btsc.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bpssc-bihar",
+    "name": "BPSSC Bihar",
+    "url": "https://bpssc.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-police",
+    "name": "Bihar Police",
+    "url": "https://police.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "ibps",
+    "name": "IBPS",
+    "url": "https://www.ibps.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "sbi-careers",
+    "name": "SBI Careers",
+    "url": "https://sbi.co.in/web/careers",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "rbi-opportunities",
+    "name": "RBI Opportunities",
+    "url": "https://opportunities.rbi.org.in/scripts/vacancies.aspx",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "india-post",
+    "name": "India Post",
+    "url": "https://www.indiapost.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "indian-army",
+    "name": "Indian Army",
+    "url": "https://joinindianarmy.nic.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "indian-navy",
+    "name": "Indian Navy",
+    "url": "https://www.joinindiannavy.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "indian-air-force",
+    "name": "Indian Air Force",
+    "url": "https://indianairforce.nic.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "indian-coast-guard",
+    "name": "Indian Coast Guard",
+    "url": "https://joinindiancoastguard.cdac.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "nabard",
+    "name": "NABARD",
+    "url": "https://www.nabard.org/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "sebi",
+    "name": "SEBI",
+    "url": "https://www.sebi.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "employment-news",
+    "name": "Employment News",
+    "url": "https://employmentnews.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "ctet",
+    "name": "CTET",
+    "url": "https://ctet.nic.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "एडमिट कार्ड",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "ugc",
+    "name": "UGC",
+    "url": "https://www.ugc.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "csir",
+    "name": "CSIR",
+    "url": "https://www.csir.res.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-board",
+    "name": "Bihar Board",
+    "url": "https://biharboardonline.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "रिजल्ट",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "uppsc",
+    "name": "UPPSC",
+    "url": "https://uppsc.up.nic.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "upsssc",
+    "name": "UPSSSC",
+    "url": "https://upsssc.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "mppsc",
+    "name": "MPPSC",
+    "url": "https://mppsc.mp.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "rpsc",
+    "name": "RPSC",
+    "url": "https://rpsc.rajasthan.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "tnpsc",
+    "name": "TNPSC",
+    "url": "https://www.tnpsc.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "नौकरी और परीक्षा",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-post-matric-scholarship",
+    "name": "Bihar Post Matric Scholarship",
+    "url": "https://pmsonline.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "छात्रवृत्ति",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "aicte",
+    "name": "AICTE",
+    "url": "https://www.aicte-india.org/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "छात्रवृत्ति",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "dbt-bharat",
+    "name": "DBT Bharat",
+    "url": "https://dbtbharat.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "सरकारी योजनाएँ",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "umang",
+    "name": "UMANG",
+    "url": "https://web.umang.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "सरकारी योजनाएँ",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "nfsa",
+    "name": "NFSA",
+    "url": "https://nfsa.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "राशन कार्ड",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "mgnrega",
+    "name": "MGNREGA",
+    "url": "https://nrega.nic.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "श्रमिक",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "pmay-urban",
+    "name": "PMAY Urban",
+    "url": "https://pmay-urban.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "आवास और जमीन",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "ayushman-bharat-pm-jay",
+    "name": "Ayushman Bharat PM-JAY",
+    "url": "https://pmjay.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "सरकारी योजनाएँ",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "voter-services-portal",
+    "name": "Voter Services Portal",
+    "url": "https://voters.eci.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "वोटर कार्ड",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "digilocker",
+    "name": "DigiLocker",
+    "url": "https://www.digilocker.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "प्रमाणपत्र",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-ration-card-epds",
+    "name": "Bihar Ration Card / EPDS",
+    "url": "https://epds.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "राशन कार्ड",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-agriculture",
+    "name": "Bihar Agriculture",
+    "url": "https://state.bihar.gov.in/krishi/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "किसान",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-labour-resources",
+    "name": "Bihar Labour Resources",
+    "url": "https://state.bihar.gov.in/labour/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "श्रमिक",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "parimarjan-plus",
+    "name": "Parimarjan Plus",
+    "url": "https://parimarjan.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "आवास और जमीन",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "bihar-bhulekh-abhilekh",
+    "name": "Bihar Bhulekh / Abhilekh",
+    "url": "https://bhuabhilekh.bihar.gov.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "आवास और जमीन",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "gaya-district",
+    "name": "Gaya District",
+    "url": "https://gaya.nic.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "जिला और पंचायत",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "free-job-alert",
+    "name": "Free Job Alert",
+    "url": "https://www.freejobalert.com/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "अन्य अपडेट",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "testbook",
+    "name": "Testbook",
+    "url": "https://testbook.com/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "अन्य अपडेट",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "adda247",
+    "name": "Adda247",
+    "url": "https://www.adda247.com/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "अन्य अपडेट",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "career-power",
+    "name": "Career Power",
+    "url": "https://www.careerpower.in/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "अन्य अपडेट",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  },
+  {
+    "id": "jagran-josh",
+    "name": "Jagran Josh",
+    "url": "https://www.jagranjosh.com/",
+    "rssUrl": "",
+    "enabled": false,
+    "category": "अन्य अपडेट",
+    "note": "अभी केवल स्रोत सूची में जोड़ा गया है। RSS/API या सुरक्षित सार्वजनिक अपडेट पेज सत्यापित करने के बाद ही मॉनिटर चालू करें।"
+  }
+]
